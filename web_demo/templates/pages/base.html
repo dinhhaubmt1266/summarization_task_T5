@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    <title>{% block title %}{% endblock  %}</title>
+    <link rel="stylesheet" href="">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div>
+                <center><img src="{% static 'image/textsum.png' %}" class="responsive-img" style="max-height: 200px"/></center>
+            </div> 
+            <div>
+                <center><h1>Using transformer 5 for summarization</h1></center>
+            </div>
+        </div> 
+        
+        <form action="" method="POST">
+            {% csrf_token %}
+            Input text: <br>
+            <textarea name="input_text" style="width:600px; height:200px;"></textarea><br>
+            <input type="submit" id="Summary"><br>
+            <hr>
+            {% if result %}
+            <h2>Input text: </h2>
+                {{text_input}} <br>
+            <h2>Summarization text: </h2>
+                {{result}}
+            {% endif %}
+        </form>
+    </div>
+    {% block  content%}
+
+    {%endblock  %}
+</body>
+</html>
