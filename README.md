@@ -8,8 +8,8 @@ B2: download and move model fine-tune to .\wep_demo\model_Transformer5_SummaryTe
 
 B3: run python manager.py runserver
 
-![image](https://github.com/dinhhaubmt1266/summarization_task_T5/assets/93081451/9f898957-382a-4580-b32a-4cfa7f326098)
-
 ![image](https://github.com/dinhhaubmt1266/summarization_task_T5/assets/93081451/1b551915-9158-430d-b6b9-04ef6bf3c1d2)
+Kiến trúc Transformer
 
 ![image](https://github.com/dinhhaubmt1266/summarization_task_T5/assets/93081451/c841d094-1261-4670-8923-709561872cc3)
+Demo chức năng tóm tắt văn bản
